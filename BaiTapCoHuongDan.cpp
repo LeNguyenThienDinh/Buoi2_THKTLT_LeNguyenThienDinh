@@ -61,3 +61,12 @@ void ghiDSSV(char fNameOut[], ItemType ds[], int n)
 	}
 	fclose(fo);
 }
+void xuatDSSV(ItemType ds[], int &n)
+{
+	printf("%-5s%-15s%-40s%-10s\n", "STT", "MSSV", "HO VA TEN SINH VIEN", "DIEM TB");
+	for (int i = 0; i < n; i++)
+	{
+		printf("%-5d", i + 1);
+		xuatTTSV(ds[i]);
+	}
+}
